@@ -1,4 +1,31 @@
-﻿using System;
+﻿// Behavior originally contributed by AknA & Wigglez.
+//
+// LICENSE:
+// This work is licensed under the
+//     Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+// also known as CC-BY-NC-SA.  To view a copy of this license, visit
+//      http://creativecommons.org/licenses/by-nc-sa/3.0/
+// or send a letter to
+//      Creative Commons // 171 Second Street, Suite 300 // San Francisco, California, 94105, USA.
+//
+
+// A QuestBehavior that checks if you have the correct runeforge on your weapon.
+// If you don't, it will take you to Acherus and runeforge it, then take you back to where you were.
+
+// How to use : <CustomBehavior File="Misc\DKEnchantWeapon" SpellID="xxxxx" /> 
+// Where xxxxx is:
+// 53341 - Rune of Cinderglacier
+// 53331 - Rune of Lichbane
+// 53343 - Rune of Razorice
+// 54447 - Rune of Spellbreaking
+// 53342 - Rune of Spellshattering
+// 54446 - Rune of Swordbreaking
+// 53323 - Rune of Swordshattering
+// 53344 - Rune of the Fallen Crusader
+// 70164 - Rune of the Nerubian Carapace
+// 62158 - Rune of the Stoneskin Gargoyle
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Media;
