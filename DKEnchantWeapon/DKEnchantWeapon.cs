@@ -107,7 +107,7 @@ namespace Styx.Bot.Quest_Behaviors {
         public static bool HasOffHand { get; set; }
         public static int WeaponMainHandEnchantID { get; set; }
         public static int WeaponOffHandEnchantID { get; set; }
-
+        
         // ===========================================================
         // Methods for/from SuperClass/Interfaces
         // ===========================================================
@@ -412,16 +412,7 @@ namespace Styx.Bot.Quest_Behaviors {
 
                         break;
                 }
-
-                return;
             }
-
-            if(!IsViable(Me)) {
-                return;
-            }
-
-            CastDeathgate();
-            TakeDeathgate();
         }
 
         private static bool IsViable(WoWObject pWoWObject) {
